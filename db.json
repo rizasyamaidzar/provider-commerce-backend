@@ -1,0 +1,298 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Admin User",
+      "email": "admin@example.com",
+      "password": "admin123",
+      "role": "Admin",
+      "balance": 0,
+      "package_amount": 0
+    },
+    {
+      "id": 2,
+      "name": "John Doe",
+      "email": "john@example.com",
+      "password": "password123",
+      "role": "Customer",
+      "balance": 1930,
+      "package_amount": 5
+    },
+    {
+      "id": 3,
+      "name": "Jane Smith",
+      "email": "jane@example.com",
+      "password": "password123",
+      "role": "Customer",
+      "balance": 10,
+      "package_amount": 26
+    }
+  ],
+  "packages": [
+    {
+      "id": 1,
+      "name": "1GB Package",
+      "price": 10,
+      "data_amount": 1,
+      "type": "internet",
+      "is_combo": true
+    },
+    {
+      "id": 2,
+      "name": "5GB Package",
+      "price": 40,
+      "data_amount": 5,
+      "type": "internet",
+      "is_combo": false
+    },
+    {
+      "id": 3,
+      "name": "10GB Package",
+      "price": 90000,
+      "data_amount": 3,
+      "type": "internet",
+      "is_combo": false
+    },
+    {
+      "id": 3,
+      "name": "10GB Package",
+      "price": 70,
+      "data_amount": 3,
+      "type": "internet",
+      "is_combo": false
+    },
+    {
+      "name": "Combo Sakti",
+      "price": 15000,
+      "data_amount": 10,
+      "type": "internet",
+      "is_combo": false,
+      "id": 4
+    }
+  ],
+  "transactions": [
+    {
+      "id": 1,
+      "user_id": 2,
+      "package_id": 1,
+      "price": 10,
+      "status": "completed",
+      "date": "2026-03-28"
+    },
+    {
+      "id": 2,
+      "user_id": 2,
+      "package_id": 2,
+      "price": 40,
+      "status": "completed",
+      "date": "2026-03-28"
+    },
+    {
+      "id": 3,
+      "user_id": 3,
+      "package_id": 1,
+      "price": 10,
+      "status": "completed",
+      "date": "2026-03-28"
+    },
+    {
+      "user_id": 2,
+      "package_id": 1,
+      "price": 10,
+      "date": "2026-03-28",
+      "status": "completed",
+      "id": 4
+    },
+    {
+      "user_id": 2,
+      "package_id": 3,
+      "price": 70,
+      "date": "2026-03-28",
+      "status": "completed",
+      "id": 5
+    },
+    {
+      "user_id": 2,
+      "package_id": 1,
+      "price": 10,
+      "date": "2026-03-28",
+      "status": "completed",
+      "id": 6
+    },
+    {
+      "user_id": 3,
+      "package_id": 1,
+      "price": 10,
+      "date": "2026-03-28",
+      "status": "completed",
+      "id": 7
+    },
+    {
+      "user_id": 3,
+      "package_id": 2,
+      "price": 40,
+      "date": "2026-03-28",
+      "status": "completed",
+      "id": 8
+    },
+    {
+      "user_id": 3,
+      "package_id": 1,
+      "price": 10,
+      "date": "2026-03-28",
+      "status": "completed",
+      "id": 9
+    },
+    {
+      "user_id": 3,
+      "package_id": 3,
+      "price": 70,
+      "date": "2026-03-28",
+      "status": "completed",
+      "id": 10
+    },
+    {
+      "user_id": 3,
+      "package_id": 1,
+      "price": 10,
+      "data_amount": 1,
+      "status": "completed",
+      "date": "2026-03-28",
+      "id": 11
+    },
+    {
+      "user_id": 3,
+      "package_id": 1,
+      "price": 10,
+      "data_amount": 1,
+      "status": "completed",
+      "date": "2026-03-28",
+      "id": 12
+    },
+    {
+      "user_id": 2,
+      "package_id": 1,
+      "price": 10,
+      "data_amount": 1,
+      "status": "completed",
+      "date": "2026-03-28",
+      "id": 13
+    },
+    {
+      "user_id": 2,
+      "package_id": 3,
+      "price": 70,
+      "data_amount": 3,
+      "status": "completed",
+      "date": "2026-03-28",
+      "id": 14
+    },
+    {
+      "user_id": 2,
+      "package_id": 1,
+      "price": 10,
+      "data_amount": 1,
+      "status": "completed",
+      "date": "2026-03-28",
+      "id": 15
+    }
+  ],
+  "topups": [
+    {
+      "id": 1,
+      "user_id": 2,
+      "amount": 100,
+      "method": "bank_transfer",
+      "status": "success",
+      "date": "2026-03-28"
+    },
+    {
+      "id": 2,
+      "user_id": 3,
+      "amount": 50,
+      "method": "e-wallet",
+      "status": "success",
+      "date": "2026-03-28"
+    },
+    {
+      "user_id": 3,
+      "amount": 150000,
+      "method": "bank_transfer",
+      "status": "success",
+      "date": "2026-03-28",
+      "id": 3
+    },
+    {
+      "user_id": 3,
+      "amount": 200000,
+      "method": "bank_transfer",
+      "status": "success",
+      "date": "2026-03-28",
+      "id": 4
+    },
+    {
+      "user_id": 3,
+      "amount": 200000,
+      "method": "bank_transfer",
+      "status": "success",
+      "date": "2026-03-28",
+      "id": 5
+    },
+    {
+      "user_id": 3,
+      "amount": 200000,
+      "method": "bank_transfer",
+      "status": "success",
+      "date": "2026-03-28",
+      "id": 6
+    },
+    {
+      "user_id": 3,
+      "amount": 200000,
+      "method": "bank_transfer",
+      "status": "success",
+      "date": "2026-03-28",
+      "id": 7
+    },
+    {
+      "user_id": 3,
+      "amount": 200000,
+      "method": "bank_transfer",
+      "status": "success",
+      "date": "2026-03-28",
+      "id": 8
+    },
+    {
+      "user_id": 3,
+      "amount": 5000,
+      "method": "bank_transfer",
+      "status": "success",
+      "date": "2026-03-28",
+      "id": 9
+    },
+    {
+      "user_id": 3,
+      "amount": 200000,
+      "method": "bank_transfer",
+      "status": "success",
+      "date": "2026-03-28",
+      "id": 10
+    },
+    {
+      "user_id": 2,
+      "amount": 5000,
+      "method": "qris",
+      "status": "success",
+      "date": "2026-03-28",
+      "id": 11
+    },
+    {
+      "user_id": 2,
+      "amount": 2000,
+      "method": "qris",
+      "status": "success",
+      "date": "2026-03-28",
+      "id": 12
+    }
+  ]
+}
