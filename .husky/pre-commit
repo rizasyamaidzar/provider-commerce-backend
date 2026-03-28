@@ -1,1 +1,8 @@
+#!/usr/bin/env sh
+
+node -e "const [major, minor] = process.versions.node.split('.').map(Number); process.exit(major > 22 || (major === 22 && minor >= 12) ? 0 : 1)" || {
+  echo "Skipping pre-commit tests: Node >=22.12.0 required, current $(node -v)"
+  exit 0
+}
+
 pnpm test

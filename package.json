@@ -33,6 +33,7 @@
   ],
   "type": "module",
   "scripts": {
+    "start": "node start.mjs",
     "dev": "node --watch --experimental-strip-types src/bin.ts fixtures/db.json",
     "build": "rm -rf lib && tsc",
     "prepublishOnly": "rm -rf lib && tsc",
